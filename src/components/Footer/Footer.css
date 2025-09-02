@@ -1,0 +1,47 @@
+footer{
+    background-color: #014692;
+    margin-top: 80px;
+    padding-block: 64px;
+}
+
+.footer-wrapper{
+    max-width: 1600px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.ftr-nav{
+    color: white;
+    font-size: 1.667vw;
+    cursor: pointer;
+}
+
+.dsp-flex-gp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8.698vw;
+}
+
+.footer-lst-wrapper{
+    display: flex;
+    gap: 3.75vw;
+    justify-content: flex-end;
+    max-width: 1600px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 20px;
+    margin-top: 98px;
+    
+}
+
+.ftr-cntct-wrapper{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25vw;
+    margin-top: 10px;
+}
+

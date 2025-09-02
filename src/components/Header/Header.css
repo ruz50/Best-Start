@@ -1,0 +1,75 @@
+/* Base layout */
+.header-main{
+  max-width: 1600px;
+  width: 100%;
+  margin: 32px auto 0;
+  padding-inline: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-wrap img { height: 36px; width: auto; display: block; }
+
+/* Desktop nav */
+.header-menu{
+  display: flex;
+  align-items: center;
+  gap: 4.375vw;
+}
+.header-links{ display: flex; gap: 15vw; list-style: none; margin: 0; padding: 0; }
+.header-links a{ text-decoration: none; color: #111; font-weight: 500; }
+
+/* Burger */
+.hamburger-btn{
+  display: none; /* hidden on desktop */
+  background: none; border: 0; padding: 8px; cursor: pointer;
+  position: relative; z-index: 1100;
+}
+.hamburger-btn img{ width: 32px; height: 32px; display: block; }
+.sr-only{ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* Mobile overlay/panel (off-canvas) */
+.mm-overlay{
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0);
+  opacity: 0; pointer-events: none;
+  transition: opacity 220ms ease;
+  z-index: 1000;
+}
+.mm-overlay.open{ background: rgba(0,0,0,0.4); opacity: 1; pointer-events: auto; }
+
+.mm-panel{
+  position: absolute; top: 0; right: 0; height: 100%;
+  width: min(90vw, 340px);
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 220ms ease;
+  display: flex; flex-direction: column;
+  box-shadow: -8px 0 24px rgba(0,0,0,0.15);
+}
+.mm-panel.open{ transform: translateX(0); }
+
+.mm-head{ display: flex; justify-content: flex-end; padding: 12px; }
+.mm-close{ background: none; border: 0; cursor: pointer; }
+.mm-close img{ width: 24px; height: 24px; display: block; }
+
+.mm-nav{ padding: 16px 20px; }
+.mm-nav .header-links{ display: grid; gap: 16px; list-style: none; padding: 0; margin: 0; }
+.mm-nav a{ font-size: 18px; font-weight: 600; color: #111; text-decoration: none; }
+
+/* Mobile rules */
+@media (max-width: 960px){
+  .hamburger-btn{ display: inline-flex; }
+  /* Hide desktop nav on mobile (we show off-canvas instead) */
+  .header-menu{ display: none; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .mm-overlay, .mm-panel { transition: none; }
+    
+}
+
+.hidden-brg-menu{
+        opacity: 0;
+    }

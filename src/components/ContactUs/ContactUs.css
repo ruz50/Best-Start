@@ -1,0 +1,48 @@
+.contact-section{
+    max-width: 1600px;
+    width: 100%;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+.contact-section form{
+    display: grid;
+    grid-area: auto;
+}
+
+.contact-section form label input, textarea, select{
+    border-width: 3px ;
+    border-color:#0B448D ;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.polite{
+    margin: 10px auto;
+    display: flex;
+    justify-self: center;
+}
+
+label{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+label input{
+    top: 5px;
+}
+
+.cntct-btn{
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(99.29deg, #EE1D1E 27.72%, #0B448D 95.87%);
+    margin-top: 20px;
+}
+
+.cntct-head{
+    margin-top: 30px;
+}

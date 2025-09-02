@@ -1,0 +1,36 @@
+.questions-wrapper{
+
+}
+
+.red{
+    color: red;
+    margin-bottom: 48px;
+}
+
+.questions-wrapper{
+    background: linear-gradient(99.29deg, #EE1D1E 27.72%, #0B448D 95.87%);
+    padding-block: 59.5px;
+    max-width: 304px;
+    width: 100%;
+    border-radius: 24px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.667vw;
+    
+}
+
+.quest-parent{
+    max-width: 1600px;
+    width: 100%;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+.questions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

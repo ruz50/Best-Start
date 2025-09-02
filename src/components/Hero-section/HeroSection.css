@@ -1,0 +1,45 @@
+.hero-img{
+    max-width: 670px;
+    width: 100%;
+    border-radius: 107px;
+    max-height: 444px;
+    object-fit: contain;
+}
+
+.hero-section{
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    padding-inline: 15px;
+    margin-top: 40px;
+    margin-inline: auto;
+    height: 65vh;
+}
+
+.hero-section h1{
+    font-size: 5.158vw;
+    z-index: 10;
+    position: absolute;
+    line-height: 130%;
+    left: 5%;
+    font-weight: 700;
+}
+
+.hero-section h1 span{
+    display: block;
+    line-height: 130%;
+}
+
+.hero-img{
+    top: 0;
+    right: 5%;
+    position: absolute;
+}
+
+.red-text{
+    color: #EE1D1E;
+}
+
+.blue-txt{
+    color: #0B448D;
+}
