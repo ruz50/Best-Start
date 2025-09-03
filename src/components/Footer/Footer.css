@@ -46,7 +46,7 @@ footer{
 }
 
 @media screen and (max-width:960px) {
-    .ftr-nav{
+    .ftr-nav,.ftr-cntct-wrapper{
         font-size: 18px;
     }
 }
