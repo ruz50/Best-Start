@@ -44,7 +44,7 @@ const OurTeam = () => {
         <Swiper
           modules={[Navigation]}
           spaceBetween={40}
-          slidesPerView={5}
+          slidesPerView={3}
           centeredSlides={true}
           loop={true}
           className='our-team-swiper'

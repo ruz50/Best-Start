@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.logo-wrap img { height: 36px; width: auto; display: block; }
+.logo-wrap img { width: auto; display: block; }
 
 /* Desktop nav */
 .header-menu{
