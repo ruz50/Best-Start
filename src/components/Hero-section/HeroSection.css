@@ -43,3 +43,9 @@
 .blue-txt{
     color: #0B448D;
 }
+
+@media screen and (max-width:960px) {
+    .hero-section{
+        height: 40vh;
+    }
+}
