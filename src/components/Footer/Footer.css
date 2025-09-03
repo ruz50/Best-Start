@@ -45,3 +45,8 @@ footer{
     margin-top: 10px;
 }
 
+@media screen and (max-width:960px) {
+    .ftr-nav{
+        font-size: 18px;
+    }
+}

@@ -58,7 +58,7 @@ const OurTeam = () => {
             },
             // ≥ 960px → your original desktop layout
             960: {
-              slidesPerView: 5,
+              slidesPerView: 3,
               spaceBetween: 0,
               centeredSlides: true, // keep center if you like it
             },

@@ -125,4 +125,7 @@
   .blue-section-wrapper{
     flex-direction: column;
   }
+  .info-texts{
+    font-size: 18px;
+  }
 }
