@@ -46,3 +46,9 @@ label input{
 .cntct-head{
     margin-top: 30px;
 }
+
+.form-contact{
+    max-width: 900px;
+    width: 100%;
+    justify-self: anchor-center;
+}

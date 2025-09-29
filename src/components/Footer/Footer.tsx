@@ -27,17 +27,7 @@ const Footer = () => {
             </div>
             
                 
-            <div>
-                <div className='ftr-cntct-wrapper'>
-                    <img src="/location.png" alt="location of best start driving school"/>
-                    <p>ք․ Երևան, Վաղարշյան 24/10</p>
-                </div>
-                <div className='ftr-cntct-wrapper'>
-                    <img src="/number.png" alt="location of best start driving school"/>
-                    <a href='tel:+374-99-73-74-44'>+374-99-73-74-44</a>
-                </div>
-            </div>
-
+           
 
             <div>
                 <div className='ftr-cntct-wrapper'>

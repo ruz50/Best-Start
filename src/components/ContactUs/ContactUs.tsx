@@ -42,7 +42,7 @@ const ContactUs: React.FC = () => {
     <section className="contact-section" id="contact">
       <h2 className="sections-head red cntct-head">Կապ մեզ հետ</h2>
 
-      <form onSubmit={onSubmit} noValidate>
+      <form onSubmit={onSubmit} noValidate className="form-contact">
         
 
         <label>

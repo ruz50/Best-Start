@@ -48,58 +48,21 @@ const AboutUs = () => {
                   հիմնադրվել է 2018 թ․։
                 </p>
                 <p className='info-texts'>
-                  Ցայսօր դպրոցն ունի մոտ{' '}
-                  <span className='bld-txt'>5000 շրջանավարտ,</span> որոնք
-                  հաջողությամբ հաղթահարել են քննությունները և ձեռք բերել
-                  վարորդական վկայական։
+                  Գործունեություն է ծավալում{' '}
+                  <span className='bld-txt'>Երևանում և Վանաձորում։</span> 
                 </p>
+               
                 <p className='info-texts'>
-                  Ավտոդպրոցն ի սկզբանե հիմնադրվել է{' '}
-                  <span className='bld-txt'>Վանաձորում,</span> (ներկայումս՝ երեք
-                  մասնաճյուղ Վանաձորում)։{' '}
-                </p>
-                <p className='info-texts'>
-                  Ժամանակի ընթացքում ընդլայնվել է ավտոդպրոցի գործունեությունը{' '}
-                  <span className='bld-txt'>Երևանում։</span>
-                </p>
-                <p className='info-texts'>
-                  2023թ․ բացվել է <span className='bld-txt'>Տիգրան Մեծ 46</span>{' '}
-                  հասցում գտնվող մասնաճյուղը։
-                </p>
-                <p className='info-texts'>
-                  2025թ մայիսից գործում է{' '}
-                  <span className='bld-txt'>Վաղարշյան 24/10-ի</span>{' '}
-                  մասնաճյուղը։
+                  Այսօր դպրոցն ունի {' '}
+                  <span className='bld-txt'>5000-ից ավել շրջանավարտ,{' '}</span>
+                  որոնք հաջողությամբ հաղթահարել են քննությունները և ձեռք բերել վարորդական վկայական։
                 </p>
               </div>
               <div className='img-wrapper'>
                 <img src='/people-img.jpg' alt='' className='ppl-img' />
               </div>
             </div>
-            <div className='dsp-flex mrg-tp gp-flex'>
-              <div className='img-wrapper'>
-                <img src='/people-img.jpg' alt='' className='ppl-img' />
-              </div>
-              <div>
-                <p className='info-texts'>
-                  2020 թ․ մասնակցել ենք{' '}
-                  <span className='red-txt'>Iris business incubatar</span>{' '}
-                  ակադեմիայի բիզնես զարգացման երկամյա դասընթացին։
-                </p>
-                <p className='info-texts'>
-                  Արժանացել ենք ֆինանսավորման, որի շնորհիվ ձեռք ենք բերել
-                  ավտովարման դասընթացի համար նախատեսված
-                  <span className='bld-txt'>
-                    սիմուլյատոր, որը Հայաստանում առկա է միայն մեր ավտոդպրոցում
-                  </span>{' '}
-                  (ձեռք ենք բերել Ռուսաստանի Դաշնությունից)։
-                </p>
-                <p className='info-texts'>
-                  Սիմուլյատորն ունի նույն մեքենայի կառուցվածքը և համապատասխանում
-                  է իրական վարմանը։
-                </p>
-              </div>
-            </div>
+            
           </div>
           <div className='blue-section pdg-text'>
             <p className='fnt-style-italic'>

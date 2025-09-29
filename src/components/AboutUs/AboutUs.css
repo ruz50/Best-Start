@@ -48,7 +48,7 @@
 .ppl-img {
   max-width: 655px;
   width: 100%;
-  height: 645px;
+  height: 450px;
   object-fit: cover;
   border-radius: 107px;
 }
@@ -131,4 +131,14 @@
   .abt-us-numbers , .nmb-text{
     font-size: 18px;
   }
+}
+
+.dsp-flex>div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;;
+}
+
+.dsp-flex{
+  gap: 20px;
 }
