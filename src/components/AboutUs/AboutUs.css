@@ -131,6 +131,9 @@
   .abt-us-numbers , .nmb-text{
     font-size: 18px;
   }
+  .ppl-img{
+    width: 100%;
+  }
 }
 
 .dsp-flex>div{
