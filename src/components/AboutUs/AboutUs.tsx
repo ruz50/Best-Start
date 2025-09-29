@@ -44,7 +44,7 @@ const AboutUs = () => {
               <div>
                 <p className='info-texts'>
                   {' '}
-                  <span className='red-txt'>BestStart</span> ավտոդպրոցը
+                  <span className="blue-text">Best</span><span className='red-txt'>Start</span> ավտոդպրոցը
                   հիմնադրվել է 2018 թ․։
                 </p>
                 <p className='info-texts'>

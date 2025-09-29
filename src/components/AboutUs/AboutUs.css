@@ -145,3 +145,8 @@
 .dsp-flex{
   gap: 20px;
 }
+
+.blue-text{
+  color: #014692;
+  font-weight: bold;
+}
