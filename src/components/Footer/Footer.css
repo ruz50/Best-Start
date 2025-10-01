@@ -50,3 +50,13 @@ footer{
         font-size: 18px;
     }
 }
+
+.facebook{
+    width: 30px;
+}
+
+.social-footer-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

@@ -5,6 +5,7 @@ import Header from "@/components/Header/Header";
 import HeroSection from "@/components/Hero-section/HeroSection";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import Questions from "@/components/Questions/Questions";
+import Review from "@/components/Reviews/Review";
 
 export default function Home() {
   return (
@@ -14,8 +15,10 @@ export default function Home() {
       <AboutUs/>
       <OurTeam/>
       <Questions/>
+      <Review/>
       <ContactUs/>
       <Footer/>
+      
     </div>
   );
 }

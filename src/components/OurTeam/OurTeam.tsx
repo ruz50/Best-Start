@@ -11,14 +11,12 @@ const OurTeam = () => {
   const swiperHouseRef = useRef<any>(null)
 
   const arrayTeam = [
-    { id: 1, name: 'John Smith', img: '/slider-images/boy.png' },
-    { id: 2, name: 'Lara Smith', img: '/slider-images/girl.png' },
-    { id: 3, name: 'John Smith', img: '/slider-images/boy.png' },
-    { id: 4, name: 'Lara Smith', img: '/slider-images/girl.png' },
-    { id: 5, name: 'John Smith', img: '/slider-images/boy.png' },
-    { id: 6, name: 'Lara Smith', img: '/slider-images/girl.png' },
-    { id: 7, name: 'John Smith', img: '/slider-images/boy.png' },
-    { id: 8, name: 'Lara Smith', img: '/slider-images/girl.png' }
+    { id: 1, img: '/slider-images/best-start-team-1.jpg' },
+    { id: 2, img: '/slider-images/IMG_0560.jpg' },
+    { id: 3, img: '/slider-images/best-start-team-members.jpg' },
+    { id: 4, img: '/slider-images/IMG_0628.jpg' },
+    { id:5, img:'/slider-images/best-start-machines.jpg'}
+    
   ]
 
   useEffect(() => {
@@ -40,10 +38,9 @@ const OurTeam = () => {
     <section className='our-team'>
       <div className='our-team-wrapper'>
         <h2 className='sections-head'>Մեր Թիմը</h2>
-        <p className='team-members'>{arrayTeam[activeIndex]?.name}</p>
         <Swiper
           modules={[Navigation]}
-          spaceBetween={40}
+          spaceBetween={50}
           slidesPerView={3}
           centeredSlides={true}
           loop={true}
@@ -73,7 +70,6 @@ const OurTeam = () => {
               >
                 <img
                   src={member.img}
-                  alt={member.name}
                   className='member-img'
                 />
               </div>

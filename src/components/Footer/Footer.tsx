@@ -43,8 +43,15 @@ const Footer = () => {
                     <a href='tel:+374-96-10-73-00'>+374-96-10-73-00</a>
                 </div>
             </div>
+
+            
         </div>
-      
+      <div className='social-footer-icons'>
+                 <div className='ftr-cntct-wrapper'>
+                    <a href="http://"><img src="/facebook.png" alt="best start driving school social" className='facebook'/></a>
+                    
+                </div>
+            </div>
     </footer>
   )
 }

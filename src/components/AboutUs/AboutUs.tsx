@@ -57,9 +57,15 @@ const AboutUs = () => {
                   <span className='bld-txt'>5000-ից ավել շրջանավարտ,{' '}</span>
                   որոնք հաջողությամբ հաղթահարել են քննությունները և ձեռք բերել վարորդական վկայական։
                 </p>
+
+                <p className='info-texts'>
+                  Դպրոցը նաև ունի {' '}
+                  <span className='bld-txt'>գործարանային ավտոմարզասարք{' '}</span>
+                  նախատեսված ավտոդպրոցների համար։
+                </p>
               </div>
               <div className='img-wrapper'>
-                <img src='/people-img.jpg' alt='' className='ppl-img' />
+                <img src='/illustrator.jpg' alt='' className='ppl-img' />
               </div>
             </div>
             
