@@ -15,7 +15,7 @@ const OurTeam = () => {
     { id: 2, img: '/slider-images/IMG_0560.jpg' },
     { id: 3, img: '/slider-images/best-start-team-members.jpg' },
     { id: 4, img: '/slider-images/IMG_0628.jpg' },
-    { id:5, img:'/slider-images/best-start-machines.jpg'}
+    { id: 5, img:'/slider-images/best-start-machines.jpg'}
     
   ]
 
