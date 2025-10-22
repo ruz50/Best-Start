@@ -1,7 +1,33 @@
+"use client" 
 import React from 'react'
 import './Review.css'
 
+//// GSAP
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+
+gsap.registerPlugin(ScrollTrigger)
+
 const Review = () => {
+   useGSAP(() => {
+    gsap.utils.toArray(".reviews").forEach((section) => {
+      const el = section as HTMLElement
+      gsap.from(el, {
+        opacity: 0,
+        y: 80,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      })
+    })
+  }, [])
+
   return (
     <section className='reviews'>
         <h2 className='sections-head'>Կարծիքներ</h2>

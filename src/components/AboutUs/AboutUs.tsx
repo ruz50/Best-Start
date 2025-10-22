@@ -3,10 +3,37 @@ import React, { useState, useEffect } from 'react'
 import CountUp from 'react-countup'
 import './AboutUs.css'
 
+//// GSAP
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+
+gsap.registerPlugin(ScrollTrigger)
+
 const AboutUs = () => {
+  
+useGSAP(() => {
+  gsap.utils.toArray<HTMLElement>(".reveal").forEach((el) => {
+    gsap.from(el, {
+      opacity: 0,
+      y: 50,
+      duration: 0.6,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 85%",
+        toggleActions: "play none none reverse",
+       
+      },
+    })
+  })
+}, [])
+
+
 
   return (
-    <section id='abt-us'>
+    <section id='abt-us' className="reveal">
       <div>
         <div className='about-us'>
           <h2 className='sections-head abt-head'>Մեր Մասին</h2>

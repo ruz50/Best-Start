@@ -52,8 +52,8 @@ const Header: React.FC = () => {
       if (isMobile && (e.target as HTMLElement).closest("a")) closeMenu();
     }}>
       <li><a href="#abt-us">Մեր մասին</a></li>
-      <li><a href="#faq">Հարցեր</a></li>
-      <li><a href="#tests">Թեստեր</a></li>
+      <li><a href="/questions">Հարցեր</a></li>
+      <li><a href="/questions">Թեստեր</a></li>
       <li><a href="#contact">Կապ մեզ հետ</a></li>
     </ul>
   ), [isMobile, closeMenu]);

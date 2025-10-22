@@ -2,7 +2,16 @@
 import React, { useState } from "react";
 import './ContactUs.css'
 
+//// GSAP
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+
+gsap.registerPlugin(ScrollTrigger)
+
 const ContactUs: React.FC = () => {
+  
   const [result, setResult] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
@@ -37,6 +46,24 @@ const ContactUs: React.FC = () => {
   }catch{
 
   }};
+   
+  
+  useGSAP(() => {
+    gsap.utils.toArray(".contact-section").forEach((section) => {
+      const el = section as HTMLElement
+      gsap.from(el, {
+        opacity: 0,
+        y: 80,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      })
+    })
+  }, [])
 
   return (
     <section className="contact-section" id="contact">

@@ -6,6 +6,14 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import './OurTeam.css'
 
+//// GSAP
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+
+gsap.registerPlugin(ScrollTrigger)
+
 const OurTeam = () => {
   const [activeIndex, setActiveIndex] = useState(0)
   const swiperHouseRef = useRef<any>(null)
@@ -32,6 +40,23 @@ const OurTeam = () => {
     return () => {
       swiperInstance.off('slideChange', handleSlideChange)
     }
+  }, [])
+  
+  useGSAP(() => {
+    gsap.utils.toArray(".our-team").forEach((section) => {
+      const el = section as HTMLElement
+      gsap.from(el, {
+        opacity: 0,
+        y: 80,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      })
+    })
   }, [])
 
   return (
